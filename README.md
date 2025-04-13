@@ -31,16 +31,6 @@ This ensures that only the necessary data is transmitted, dramatically reducing 
 
 ---
 
-## 📂 Example Manifest Format
-
-```json
-{
-  "blocks": [
-    "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3",
-    "c5e478d59288c841aa530db6845c4c8d962893a0",
-    "4a44dc15364204a80fe80e9039455cc160828182"
-  ]
-}
 
 
 Usage
@@ -102,4 +92,8 @@ Hashing: SHA-256
 Sync Strategy: Block-level deduplication
 
 Transport: CLI-based; RPC planned
+
+## 🏁 Conclusion
+
+BlockSync represents a foundational step toward building smarter, faster, and more scalable file synchronization systems. By combining Golang's performance with AWS S3’s reliability and an intelligent block-level deduplication strategy, this project minimizes redundancy and maximizes efficiency. Phase 1 demonstrates how simple design principles — content-addressable storage, hashing, and manifest tracking — can enable high-impact optimizations in data transfer and storage. BlockSync is designed with extensibility in mind, setting the stage for future enhancements such as remote RPC control, resumable uploads, file reconstruction, content-defined chunking, and full versioning support. Whether you're syncing gigabytes of logs or collaborating on evolving datasets, BlockSync offers a fast, efficient, and flexible foundation to build on.
 
